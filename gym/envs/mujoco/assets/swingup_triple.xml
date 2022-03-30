@@ -26,9 +26,9 @@
   <size nstack="3000"/>
   <worldbody>
     <geom name="floor" pos="0 0 -3.0" rgba="0.8 0.9 0.8 1" size="40 40 40" type="plane"/>
-    <geom name="rail" pos="0 0 0" quat="0.707 0 0.707 0" rgba="0.3 0.3 0.7 1" size="0.02 2." type="capsule"/>
+    <geom name="rail" pos="0 0 0" quat="0.707 0 0.707 0" rgba="0.3 0.3 0.7 1" size="0.02 2.5" type="capsule"/>
     <body name="cart" pos="0 0 0">
-      <joint axis="1 0 0" limited="true" margin="0.01" name="slider" pos="0 0 0" range="-2. 2." type="slide"/>
+      <joint axis="1 0 0" limited="true" margin="0.01" name="slider" pos="0 0 0" range="-2.5 2.5" type="slide"/>
       <geom name="cart" pos="0 0 0" quat="0.707 0 0.707 0" size="0.1 0.1" type="capsule"/>
       <body name="pole1" pos="0 0 0">
         <joint axis="0 1 0" name="hinge1" pos="0 0 0" type="hinge"/>
@@ -46,6 +46,6 @@
     </body>
   </worldbody>
   <actuator>
-    <motor ctrllimited="true" ctrlrange="-2. 2." gear="1000" joint="slider" name="slide"/>
+    <motor ctrllimited="true" ctrlrange="-2.5 2.5" gear="1000" joint="slider" name="slide"/>
   </actuator>
 </mujoco>
