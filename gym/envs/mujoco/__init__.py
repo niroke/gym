@@ -13,3 +13,5 @@ from gym.envs.mujoco.reacher import ReacherEnv
 from gym.envs.mujoco.swimmer import SwimmerEnv
 from gym.envs.mujoco.humanoidstandup import HumanoidStandupEnv
 from gym.envs.mujoco.pusher import PusherEnv
+from gym.envs.mujoco.swingup_double import SwingupDoubleEnv
+from gym.envs.mujoco.swingup_triple import SwingupTripleEnv

@@ -249,3 +249,15 @@ register(
     entry_point="gym.envs.mujoco:HumanoidStandupEnv",
     max_episode_steps=1000,
 )
+
+register(
+    id="SwingupDouble-v1",
+    entry_point="gym.envs.mujoco:SwingupDoubleEnv",
+    max_episode_steps=1000,
+)
+
+register(
+    id="SwingupTriple-v1",
+    entry_point="gym.envs.mujoco:SwingupTripleEnv",
+    max_episode_steps=1000,
+)
